@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - FormHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-white text-xl font-bold">FormHub</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="/" class="text-white/80 hover:text-white">Home</a>
+                    <a href="/blog.html" class="text-white/80 hover:text-white">Blog</a>
+                    <a href="/news.html" class="text-white">News</a>
+                    <a href="/careers.html" class="text-white/80 hover:text-white">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-white mb-6">Latest News</h1>
+            <p class="text-xl text-white/80 max-w-3xl mx-auto">
+                Stay informed about FormHub's latest updates, product releases, and company announcements.
+            </p>
+        </div>
+
+        <!-- Featured News -->
+        <div class="max-w-4xl mx-auto mb-16">
+            <div class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-64 bg-gradient-to-br from-blue-400 to-purple-500"></div>
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">BREAKING</span>
+                        <span class="text-white/60">January 18, 2024</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-4">FormHub Raises $50M Series B to Accelerate Global Expansion</h2>
+                    <p class="text-white/80 text-lg mb-6">We're excited to announce our Series B funding round led by top-tier investors to fuel our international growth and product development initiatives.</p>
+                    <button class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Read Full Story
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">January 15, 2024</div>
+                    <h3 class="text-xl font-bold text-white mb-3">New AI-Powered Form Analytics Launch</h3>
+                    <p class="text-white/80 mb-4">Our latest feature uses machine learning to provide insights into form performance and user behavior patterns.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">January 12, 2024</div>
+                    <h3 class="text-xl font-bold text-white mb-3">FormHub Partners with Shopify</h3>
+                    <p class="text-white/80 mb-4">Seamlessly integrate FormHub with Shopify stores to enhance customer engagement and data collection.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">January 8, 2024</div>
+                    <h3 class="text-xl font-bold text-white mb-3">99.9% Uptime Achievement</h3>
+                    <p class="text-white/80 mb-4">We're proud to announce that FormHub achieved 99.9% uptime in 2023, ensuring reliable service for all users.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">January 5, 2024</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mobile App Update 3.0</h3>
+                    <p class="text-white/80 mb-4">The latest mobile app update includes improved performance, new themes, and enhanced offline capabilities.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-indigo-400 to-blue-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">December 28, 2023</div>
+                    <h3 class="text-xl font-bold text-white mb-3">SOC 2 Type II Certification</h3>
+                    <p class="text-white/80 mb-4">FormHub successfully completed SOC 2 Type II audit, demonstrating our commitment to security and compliance.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+
+            <article class="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20">
+                <div class="h-48 bg-gradient-to-br from-teal-400 to-green-500"></div>
+                <div class="p-6">
+                    <div class="text-white/60 text-sm mb-2">December 20, 2023</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Holiday Hours Update</h3>
+                    <p class="text-white/80 mb-4">Our support team schedule and response times during the holiday season to ensure continued service.</p>
+                    <button class="text-white font-semibold hover:underline">Read More →</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="max-w-2xl mx-auto mt-16">
+            <div class="bg-white/10 backdrop-blur-md rounded-lg p-8 border border-white/20 text-center">
+                <h2 class="text-2xl font-bold text-white mb-4">Stay Updated</h2>
+                <p class="text-white/80 mb-6">Subscribe to our newsletter to get the latest news and updates delivered to your inbox.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 p-3 rounded-lg bg-white/20 text-white placeholder-white/60 border border-white/30">
+                    <button class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="/" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Back to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>

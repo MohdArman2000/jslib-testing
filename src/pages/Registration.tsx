@@ -76,64 +76,58 @@ const Registration = () => {
                 <div className="space-y-4">
                   <h3 className="text-lg font-semibold border-b pb-2">Personal Information</h3>
                   
-                  <FormField label="Full Name" required>
+                   <FormField label="Full Name">
                     <Input
                       type="text"
                       placeholder="Enter your full name"
                       value={formData.name}
                       onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                      required
                       className="transition-all duration-300 focus:shadow-glow"
                     />
                   </FormField>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <FormField label="Phone Number" required>
+                     <FormField label="Phone Number">
                       <Input
                         type="tel"
                         placeholder="9876543210"
                         value={formData.phone}
                         onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                        required
                         className="transition-all duration-300 focus:shadow-glow"
                       />
                     </FormField>
 
-                    <FormField label="Date of Birth" required>
+                     <FormField label="Date of Birth">
                       <Input
                         type="date"
                         value={formData.dateOfBirth}
                         onChange={(e) => setFormData(prev => ({ ...prev, dateOfBirth: e.target.value }))}
-                        required
                         className="transition-all duration-300 focus:shadow-glow"
                       />
                     </FormField>
                   </div>
 
-                  <FormField label="Email Address" required>
+                   <FormField label="Email Address">
                     <Input
                       type="email"
                       placeholder="example@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                      required
                       className="transition-all duration-300 focus:shadow-glow"
                     />
                   </FormField>
 
-                  <FormField label="Password" required>
+                   <FormField label="Password">
                     <Input
                       type="password"
-                      placeholder="Enter a secure password"
+                      placeholder="Enter a secure password (optional)"
                       value={formData.password}
                       onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
-                      required
-                      minLength={8}
                       className="transition-all duration-300 focus:shadow-glow"
                     />
                   </FormField>
 
-                  <FormField label="Gender" required>
+                  <FormField label="Gender">
                     <RadioGroup
                       value={formData.gender}
                       onValueChange={(value) => setFormData(prev => ({ ...prev, gender: value }))}
@@ -174,7 +168,7 @@ const Registration = () => {
                     </div>
                   </FormField>
 
-                  <FormField label="Education Qualification" required>
+                  <FormField label="Education Qualification">
                     <Select
                       value={formData.education}
                       onValueChange={(value) => setFormData(prev => ({ ...prev, education: value }))}
@@ -191,13 +185,12 @@ const Registration = () => {
                     </Select>
                   </FormField>
 
-                  <FormField label="Address" required>
+                   <FormField label="Address">
                     <Textarea
-                      placeholder="Enter your complete address"
+                      placeholder="Enter your complete address (optional)"
                       value={formData.address}
                       onChange={(e) => setFormData(prev => ({ ...prev, address: e.target.value }))}
                       rows={4}
-                      required
                       className="transition-all duration-300 focus:shadow-glow resize-none"
                     />
                   </FormField>
@@ -241,6 +234,84 @@ const Registration = () => {
                 <p className="text-xs text-muted-foreground">
                   After registration, please check your email for a confirmation message.
                 </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Action Buttons Section */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <Card className="shadow-extra border-0 bg-gradient-card">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-bold">Explore More</CardTitle>
+              <CardDescription>Navigate to different sections of our platform</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="/services.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Services</div>
+                      <div className="text-xs opacity-70">Our Offerings</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/portfolio.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Portfolio</div>
+                      <div className="text-xs opacity-70">Our Work</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/blog.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Blog</div>
+                      <div className="text-xs opacity-70">Latest News</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/team.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Team</div>
+                      <div className="text-xs opacity-70">Meet Us</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/pricing.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Pricing</div>
+                      <div className="text-xs opacity-70">Our Plans</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/support.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Support</div>
+                      <div className="text-xs opacity-70">Get Help</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/careers.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">Careers</div>
+                      <div className="text-xs opacity-70">Join Us</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="/news.html" className="block">
+                  <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <div>
+                      <div className="font-semibold">News</div>
+                      <div className="text-xs opacity-70">Updates</div>
+                    </div>
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
