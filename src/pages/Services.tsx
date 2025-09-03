@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
@@ -7,14 +8,14 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <a href="/" className="text-white text-xl font-bold">FormHub</a>
+              <Link to="/" className="text-white text-xl font-bold">FormHub</Link>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-              <a href="/jslib-testing/services.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-              <a href="/jslib-testing/portfolio.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-              <a href="/jslib-testing/pricing.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-              <a href="/contact" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <Link to="/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+              <Link to="/services" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Services</Link>
+              <Link to="/portfolio" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Portfolio</Link>
+              <Link to="/pricing" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Pricing</Link>
+              <Link to="/contact" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
             </div>
           </div>
         </div>
