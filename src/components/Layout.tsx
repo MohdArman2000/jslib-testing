@@ -13,9 +13,6 @@ const Layout = ({ children }: LayoutProps) => {
   const navigation = [
     { name: 'Home', href: '/', isExternal: true },
     { name: 'About', href: '/about', isExternal: false },
-    { name: 'Services', href: '/services.html', isExternal: true },
-    { name: 'Portfolio', href: '/portfolio.html', isExternal: true },
-    { name: 'Pricing', href: '/pricing.html', isExternal: true },
     { name: 'Contact', href: '/contact', isExternal: false },
     { name: 'Suggestions', href: '/suggestions', isExternal: false },
     { name: 'Feedback', href: '/feedback', isExternal: false },

@@ -248,7 +248,7 @@ const Registration = () => {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <a href="/services.html" className="block">
+                <a href="/jslib-testing/services.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Services</div>
@@ -256,7 +256,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/portfolio.html" className="block">
+                <a href="/jslib-testing/portfolio.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Portfolio</div>
@@ -264,7 +264,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/blog.html" className="block">
+                <a href="/jslib-testing/blog.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Blog</div>
@@ -272,7 +272,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/team.html" className="block">
+                <a href="/jslib-testing/team.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Team</div>
@@ -280,7 +280,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/pricing.html" className="block">
+                <a href="/jslib-testing/pricing.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Pricing</div>
@@ -288,7 +288,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/support.html" className="block">
+                <a href="/jslib-testing/support.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Support</div>
@@ -296,7 +296,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/careers.html" className="block">
+                <a href="/jslib-testing/careers.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">Careers</div>
@@ -304,7 +304,7 @@ const Registration = () => {
                     </div>
                   </Button>
                 </a>
-                <a href="/news.html" className="block">
+                <a href="/jslib-testing/news.html" className="block">
                   <Button variant="outline" className="w-full h-20 text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <div>
                       <div className="font-semibold">News</div>
