@@ -8,10 +8,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <Link to="/" className="text-white text-xl font-bold">FormHub</Link>
+              <a href="/jslib-testing/" className="text-white text-xl font-bold">FormHub</a>
             </div>
             <div className="flex items-center space-x-4">
-              <Link to="/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+              <a href="/jslib-testing/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</a>
               <Link to="/services" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Services</Link>
               <Link to="/portfolio" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Portfolio</Link>
               <Link to="/pricing" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Pricing</Link>

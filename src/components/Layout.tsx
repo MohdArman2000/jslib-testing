@@ -23,25 +23,40 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <a href="/jslib-testing/" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-primary"></div>
             <span className="gradient-text text-xl font-bold">FormHub</span>
-          </Link>
+          </a>
           
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  location.pathname === item.href
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                )}
-              >
-                {item.name}
-              </Link>
+              item.name === 'Home' ? (
+                <a
+                  key={item.name}
+                  href="/jslib-testing/"
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    location.pathname === item.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    location.pathname === item.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -64,10 +79,10 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container py-8 md:py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <Link to="/" className="flex items-center space-x-2 mb-4">
+              <a href="/jslib-testing/" className="flex items-center space-x-2 mb-4">
                 <div className="h-6 w-6 rounded bg-gradient-primary"></div>
                 <span className="gradient-text font-bold">FormHub</span>
-              </Link>
+              </a>
               <p className="text-sm text-muted-foreground max-w-xs">
                 Your trusted platform for registration, feedback, and seamless communication.
               </p>
@@ -78,12 +93,21 @@ const Layout = ({ children }: LayoutProps) => {
               <ul className="space-y-2 text-sm">
                 {navigation.map((item) => (
                   <li key={item.name}>
-                    <Link 
-                      to={item.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {item.name}
-                    </Link>
+                    {item.name === 'Home' ? (
+                      <a 
+                        href="/jslib-testing/"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={item.href}
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
