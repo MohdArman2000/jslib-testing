@@ -11,9 +11,9 @@ const Pricing = () => {
             </div>
             <div className="flex items-center space-x-4">
               <a href="/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-              <a href="/services.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-              <a href="/portfolio.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-              <a href="/pricing.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+              <a href="/jslib-testing/services.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <a href="/jslib-testing/portfolio.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+              <a href="/jslib-testing/pricing.html" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
               <a href="/contact" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
             </div>
           </div>
