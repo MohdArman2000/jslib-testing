@@ -11,11 +11,14 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Suggestions', href: '/suggestions' },
-    { name: 'Feedback', href: '/feedback' },
+    { name: 'Home', href: '/', isExternal: true },
+    { name: 'About', href: '/about', isExternal: false },
+    { name: 'Services', href: '/services.html', isExternal: true },
+    { name: 'Portfolio', href: '/portfolio.html', isExternal: true },
+    { name: 'Pricing', href: '/pricing.html', isExternal: true },
+    { name: 'Contact', href: '/contact', isExternal: false },
+    { name: 'Suggestions', href: '/suggestions', isExternal: false },
+    { name: 'Feedback', href: '/feedback', isExternal: false },
   ];
 
   return (
@@ -30,10 +33,10 @@ const Layout = ({ children }: LayoutProps) => {
           
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
-              item.name === 'Home' ? (
+              item.isExternal ? (
                 <a
                   key={item.name}
-                  href="/jslib-testing/"
+                  href={item.name === 'Home' ? "/jslib-testing/" : `/jslib-testing${item.href}`}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
                     location.pathname === item.href
@@ -93,9 +96,9 @@ const Layout = ({ children }: LayoutProps) => {
               <ul className="space-y-2 text-sm">
                 {navigation.map((item) => (
                   <li key={item.name}>
-                    {item.name === 'Home' ? (
+                    {item.isExternal ? (
                       <a 
-                        href="/jslib-testing/"
+                        href={item.name === 'Home' ? "/jslib-testing/" : `/jslib-testing${item.href}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         {item.name}
