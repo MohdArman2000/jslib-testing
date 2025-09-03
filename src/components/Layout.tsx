@@ -124,7 +124,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
           
           <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-            © 2024 FormHub. All rights reserved.
+            © 2024 FormHub. All rights reserved. | Updated
           </div>
         </div>
       </footer>
